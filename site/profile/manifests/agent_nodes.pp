@@ -1,5 +1,5 @@
 class profile::agent_nodes {
-  inculd dockeragent
+  inculde dockeragent
   dockeragent::node {'web.puppet.vm':}
   dockeragent::node {'db.puppet.vm':}
 }
