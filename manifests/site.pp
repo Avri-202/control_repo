@@ -2,7 +2,7 @@ node default {
   file { '/root/README':
     ensure => file,
     content => 'This is a readme',
-    owner   => 'root',
+    owner => 'root',
   }
 }
 node 'master.puppet.vm' {
@@ -10,7 +10,7 @@ node 'master.puppet.vm' {
   file { '/root/README':
      ensure => file,
     content => $fqdn
-    owner   => 'root',
+    owner => 'root',
   }
 }
 node /^web/ { 
